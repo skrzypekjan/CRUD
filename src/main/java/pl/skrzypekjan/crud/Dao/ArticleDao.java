@@ -1,7 +1,7 @@
 package pl.skrzypekjan.crud.Dao;
 
 import org.springframework.stereotype.Component;
-import pl.skrzypekjan.articlesboot.Dao.Entity.Article;
+import pl.skrzypekjan.crud.Dao.Entity.Article;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

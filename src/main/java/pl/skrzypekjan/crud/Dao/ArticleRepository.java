@@ -2,7 +2,7 @@ package pl.skrzypekjan.crud.Dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import pl.skrzypekjan.articlesboot.Dao.Entity.Article;
+import pl.skrzypekjan.crud.Dao.Entity.Article;
 
 import java.util.List;
 
