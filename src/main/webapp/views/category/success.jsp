@@ -1,0 +1,19 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h1>Catergories</h1>
+<table>
+    <tr>
+        <td>Descryption:</td>
+        <td>${category.description}</td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>${category.name}</td>
+    </tr>
+</table>
+</body>
+</html>
