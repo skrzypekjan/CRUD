@@ -8,26 +8,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>ARTICLES</title>
 </head>
 <body>
-<h1>Witaj na mojej stronie z artykułami</h1>
+<h1>Welcome to my article page</h1>
 <br>
-<h3>Dodaj Autora</h3>
+<h3>Add Author</h3>
 <form action="/author/add">
-    <input type="submit" value="Dodaj Autora" />
+    <input type="submit" value="ADD" />
 </form>
-<h3>Dodaj Kategorie</h3>
+<h3>Add Category</h3>
 <form action="/category/add">
-    <input type="submit" value="Dodaj Kategorię" />
+    <input type="submit" value="ADD" />
 </form>
-<h3>Dodaj Artykuł</h3>
+<h3>Add Article</h3>
 <form action="/article/add">
-    <input type="submit" value="Dodaj Artykuł" />
+    <input type="submit" value="ADD" />
 </form>
-<h3>Sprawdź ostatnie </h3>
+<h3>Check the last five records</h3>
 <form action="/home/add">
-    <input type="submit" value="Sprawdź" />
+    <input type="submit" value="CHECK" />
 </form>
 </body>
 </html>

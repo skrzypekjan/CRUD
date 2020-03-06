@@ -15,5 +15,11 @@
         <td>${category.name}</td>
     </tr>
 </table>
+<form action="/category/add">
+    <input type="submit" value="BACK" />
+</form>
+<form action="/">
+    <input type="submit" value="HOME" />
+</form>
 </body>
 </html>

@@ -28,7 +28,10 @@
     </tr>
 </table>
 <form action="/article/add">
-    <input type="submit" value="WRÓC DO DODAWNIA" />
+    <input type="submit" value="BACK" />
+</form>
+<form action="/">
+    <input type="submit" value="HOME" />
 </form>
 </body>
 </html>

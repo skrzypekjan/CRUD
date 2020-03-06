@@ -25,7 +25,7 @@
     </c:forEach>
 </table>
 <form action="/">
-    <input type="submit" value="Wróć" />
+    <input type="submit" value="BACK" />
 </form>
 <%--<form:form method="post" modelAttribute="articles">--%>
 <%--<div>--%>

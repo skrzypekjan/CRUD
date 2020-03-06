@@ -16,4 +16,10 @@
     </tr>
 </table>
 </body>
+<form action="/home/add">
+    <input type="submit" value="BACK" />
+</form>
+<form action="/">
+    <input type="submit" value="HOME" />
+</form>
 </html>

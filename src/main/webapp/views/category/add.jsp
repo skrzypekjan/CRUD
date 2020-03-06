@@ -19,10 +19,10 @@
         <form:input path="name"/>
         <form:errors path="name"/>
     </div>
-    <input type="submit" value="Save">
+    <input type="submit" value="SAVE">
 </form:form>
 <form action="/">
-    <input type="submit" value="Wróć"/>
+    <input type="submit" value="BACK"/>
 </form>
 </body>
 </html>

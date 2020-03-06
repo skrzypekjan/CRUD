@@ -15,5 +15,11 @@
         <td>${author.lastName}</td>
     </tr>
 </table>
+<form action="/author/add">
+    <input type="submit" value="BACK" />
+</form>
+<form action="/">
+    <input type="submit" value="HOME" />
+</form>
 </body>
 </html>
