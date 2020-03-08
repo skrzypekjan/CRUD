@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cukiereczek</title>
+    <title>Articles</title>
 
     <!-- Custom fonts for this template-->
     <link href="<c:url value='/resources/vendor/fontawesome-free/css/all.min.css'/>" rel="stylesheet" type="text/css">
@@ -37,7 +37,7 @@
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">Cukiereczek</div>
+            <div class="sidebar-brand-text mx-3">Articles</div>
         </a>
 
         <!-- Divider -->
@@ -45,31 +45,31 @@
 
         <!-- Heading -->
         <div class="sidebar-heading">
-            Działy
+            OPTIONS
         </div>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/consultations/show">
+            <a class="nav-link" href="/author/add">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Konsultacja Lekarska</span></a>
+                <span>Add Author</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/results/show">
+            <a class="nav-link" href="/category/add">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Wyniki</span></a>
+                <span>Add Category</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/glucometer/show">
+            <a class="nav-link" href="/article/add">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Poziom cukru</span></a>
+                <span>Add Article</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/medicines/show">
+            <a class="nav-link" href="/home/add">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Zapisane leki</span></a>
+                <span>Check last five</span></a>
         </li>
 
         <!-- Divider -->
@@ -94,5 +94,5 @@
                 <br>
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Kontroluj swoje zdrowie</h1>
+                    <h1 class="h3 mb-0 text-gray-800">A simple crud site that manages articles.</h1>
                 </div>

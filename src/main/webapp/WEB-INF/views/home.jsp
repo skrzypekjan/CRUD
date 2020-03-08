@@ -1,9 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>ARTICLES</title>
-</head>
-<body>
+<jsp:include page="header.jsp" />
+
 <h1>Welcome to my article page</h1>
 <br>
 <h3>Add Author</h3>
@@ -22,5 +18,4 @@
 <form action="/home/add">
     <input type="submit" value="CHECK" />
 </form>
-</body>
-</html>
+<jsp:include page="footer.jsp" />

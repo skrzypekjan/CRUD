@@ -1,11 +1,7 @@
 <%@ taglib prefix="form"
            uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>ADD ARTICLE</title>
-</head>
-<body>
+<jsp:include page="../header.jsp" />
 <h1>Add article</h1>
 
 <form:form method="post" modelAttribute="article">
@@ -42,5 +38,4 @@
 <form action="/">
     <input type="submit" value="BACK" />
 </form>
-</body>
-</html>
+<jsp:include page="../footer.jsp" />
