@@ -37,7 +37,7 @@ public class ArticleController {
         model.addAttribute("category", categoryDao.findAll());
         article.setCreated(LocalDate.now().toString());
         article.setUpdated(LocalDate.now().toString());
-        article.setTitle("Tytul ");
+        article.setTitle("Title ");
         model.addAttribute("article", article);
         return "article/add";
     }

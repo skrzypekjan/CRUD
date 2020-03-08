@@ -1,10 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>SUCCESS</title>
 </head>
 <body>
-<h1>Catergories</h1>
+<h1>CATEGORIES ADDED CORRECTLY</h1>
 <table>
     <tr>
         <td>Descryption:</td>

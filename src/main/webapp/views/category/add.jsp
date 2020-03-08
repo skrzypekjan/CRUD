@@ -3,10 +3,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>ADDING</title>
 </head>
 <body>
-<h1>Add category</h1>
+<h1>ADD CATEGORY</h1>
 
 <form:form method="post" modelAttribute="category">
     <div>
