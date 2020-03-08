@@ -12,7 +12,6 @@
     </tr>
     <tr>
         <td>author:</td>
-        <td>${article.author.firstName}</td>
         <td>${article.author.lastName}</td>
     </tr>
     <tr>
