@@ -32,9 +32,10 @@
         <form:input path="created"/>
         <form:errors path="created"/>
     </div>
-
+    <br>
     <input type="submit" value="SAVE">
 </form:form>
+<br>
 <form action="/">
     <input type="submit" value="BACK" />
 </form>

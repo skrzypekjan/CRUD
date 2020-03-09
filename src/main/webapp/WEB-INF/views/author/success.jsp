@@ -1,9 +1,7 @@
+<%@ taglib prefix="form"
+           uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>SUCCESS</title>
-</head>
-<body>
+<jsp:include page="../header.jsp" />
 <h1>AUTHOR ADDED CORRECTLY</h1>
 <table>
     <tr>
@@ -15,11 +13,12 @@
         <td>${author.lastName}</td>
     </tr>
 </table>
+<br>
 <form action="/author/add">
     <input type="submit" value="BACK" />
 </form>
+<br>
 <form action="/">
     <input type="submit" value="HOME" />
 </form>
-</body>
-</html>
+<jsp:include page="../footer.jsp" />
