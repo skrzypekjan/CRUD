@@ -1,5 +1,6 @@
 <%@ taglib prefix="form"
            uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:include page="../header.jsp" />
 
@@ -25,26 +26,26 @@
                     <th>DELETE</th>
                 </tfoot>
                 <tbody>
-                <c:forEach items="${category}" var="cat">
+                <c:forEach items="${category}" var="cate">
                     <tr>
-                        <th>${cat.name}</th>
-                        <th>${cat.description}</th>
-                        <%--<th>--%>
-                            <%--<a href="/consultations/edit/${category.id}" class="btn btn-warning btn-icon-split">--%>
-                                <%--<span class="icon text-white-50">--%>
-                                    <%--<i class="fas fa-exclamation-triangle"></i>--%>
-                                <%--</span>--%>
-                                <%--<span class="text">Edytuj</span>--%>
-                            <%--</a>--%>
-                        <%--</th>--%>
-                        <%--<th>--%>
-                            <%--<a href="/consultations/remove/${category.id}" class="btn btn-danger btn-icon-split">--%>
-                                <%--<span class="icon text-white-50">--%>
-                                    <%--<i class="fas fa-trash"></i>--%>
-                                <%--</span>--%>
-                                <%--<span class="text">Usuń</span>--%>
-                            <%--</a>--%>
-                        <%--</th>--%>
+                        <th>${cate.name}</th>
+                        <th>${cate.description}</th>
+                        <th>
+                            <a href="/category/edit/${cate.id}" class="btn btn-warning btn-icon-split">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </span>
+                                <span class="text">Edit</span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="/category/remove/${cate.id}" class="btn btn-danger btn-icon-split">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="text">Delete</span>
+                            </a>
+                        </th>
                     </tr>
                 </c:forEach>
                 </tbody>

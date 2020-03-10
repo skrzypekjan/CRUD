@@ -19,7 +19,7 @@ public class CategoryDao {
         entityManager.persist(entity);
     }
 
-    public Category findById(int id) {
+    public Category findById(long id) {
         return entityManager.find(Category.class, id);
     }
 
@@ -31,7 +31,6 @@ public class CategoryDao {
         entityManager.remove(entityManager.contains(entity) ?
                 entity : entityManager.merge(entity));
     }
-
 
     public List<Category> findAll() {
         Query query = entityManager.createQuery("SELECT a FROM Category a");

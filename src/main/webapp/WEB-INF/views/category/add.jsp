@@ -6,17 +6,17 @@
 
 <form:form method="post" modelAttribute="category">
     <div>
-        <p>Opis</p>
+        <p>Description:</p>
         <form:input path="description"/>
         <form:errors path="description"/>
     </div>
     <div>
-        <p>Nazwa</p>
+        <p>Name:</p>
         <form:input path="name"/>
         <form:errors path="name"/>
     </div>
     <br>
-    <input type="submit" value="SAVE">
+    <input type="submit" value="SAVE" class="btn btn-light btn-icon-split">
 </form:form>
 <br>
 <form action="/">
