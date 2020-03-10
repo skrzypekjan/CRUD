@@ -1,7 +1,6 @@
 package pl.skrzypekjan.crud.Dao.Entity;
 
 import lombok.Data;
-
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
