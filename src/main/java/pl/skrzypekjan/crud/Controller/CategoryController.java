@@ -74,6 +74,4 @@ public class CategoryController {
         categoryDao.delete(one);
         return "redirect:/category/show";
     }
-
-
 }

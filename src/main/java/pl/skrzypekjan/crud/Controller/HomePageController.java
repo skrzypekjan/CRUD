@@ -28,26 +28,26 @@ public class HomePageController {
         return "home";
     }
 
-    @GetMapping("/home/add")
+    @GetMapping("/home/show")
     public String showLastFive(Model model) {
 
         List<Article> list = articleRepository.findLastFive();
         System.out.println("##***************************************");
         System.out.println(list);
         model.addAttribute("articles", list);
-        return "home/add";
+        return "home/show";
     }
 
-    @PostMapping("/home/add")
+    @PostMapping("/home/show")
     public String processForm(BindingResult result, Model model) {
         if (result.hasErrors()) {
             List<Article> list = articleRepository.findLastFive();
             model.addAttribute("list", list);
-            return "home/add";
+            return "home/show";
         }
 //          articleDao.save(article);
 //          model.addAttribute("article", articleDao.findById(article.getId()));
         //model.addAttribute("article", article);
-        return "home/success";
+        return "home/show";
     }
 }

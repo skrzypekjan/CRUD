@@ -3,13 +3,13 @@ package pl.skrzypekjan.crud.Controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import pl.skrzypekjan.crud.Dao.ArticleDao;
 import pl.skrzypekjan.crud.Dao.AuthorDao;
 import pl.skrzypekjan.crud.Dao.CategoryDao;
 import pl.skrzypekjan.crud.Dao.Entity.Article;
+import pl.skrzypekjan.crud.Dao.Entity.Author;
+import pl.skrzypekjan.crud.Dao.Entity.Category;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
@@ -29,8 +29,13 @@ public class ArticleController {
         this.categoryDao = categoryDao;
     }
 
+    @RequestMapping(value = "/show", method = RequestMethod.GET)
+    public String showList(@Valid Article article, BindingResult result, Model model){
+        model.addAttribute("article", articleDao.findAll());
+        return "article/show";
+    }
 
-    @GetMapping("/add")
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String showRegistrationForm(Model model) {
         Article article = new Article();
         model.addAttribute("author", authorDao.findAll());
@@ -42,9 +47,7 @@ public class ArticleController {
         return "article/add";
     }
 
-
-
-    @PostMapping("/add")
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String processForm(@Valid Article article, BindingResult result, Model model) {
         if (result.hasErrors()) {
             model.addAttribute("author", authorDao.findAll());
@@ -54,6 +57,31 @@ public class ArticleController {
         articleDao.save(article);
         model.addAttribute("article", articleDao.findById(article.getId()));
         //model.addAttribute("article", article);
-        return "article/success";
+        return "article/show";
+    }
+
+    @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
+    public String editArticle(@PathVariable int id, Model model) {
+        Article one = articleDao.findById(id);
+//        model.addAttribute("author", authorDao.findAll());
+//        model.addAttribute("category", categoryDao.findAll());
+//        one.setAuthor(one.getAuthor());
+//        one.setCreated(one.getCreated());
+//        one.setUpdated(LocalDate.now().toString());
+        model.addAttribute("article", one);
+        return "article/edit";
+    }
+
+    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    public String editArticleSuccess(@ModelAttribute("article") Article article) {
+        articleDao.update(article);
+        return "redirect:/article/show";
+    }
+
+    @RequestMapping(value = "/remove/{id}", method = RequestMethod.GET)
+    public String removeArticle(@PathVariable int id, Model model) {
+        Article one = articleDao.findById(id);
+        articleDao.delete(one);
+        return "redirect:/article/show";
     }
 }
