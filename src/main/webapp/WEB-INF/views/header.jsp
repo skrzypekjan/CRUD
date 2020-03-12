@@ -49,25 +49,25 @@
         </div>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/author/add">
+            <a class="nav-link" href="/author/show">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Add Author</span></a>
+                <span>Author</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/category/add">
+            <a class="nav-link" href="/category/show">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Add Category</span></a>
+                <span>Category</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/article/add">
+            <a class="nav-link" href="/article/show">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Add Article</span></a>
+                <span>Article</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="/home/add">
+            <a class="nav-link" href="/home/show">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Check last five</span></a>
         </li>
