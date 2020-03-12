@@ -6,3 +6,4 @@ It is an application of simple content management. Searching, editing, deleting 
 * Lombok
 * Hibernate
 * MySQL
+* Bootstrap
