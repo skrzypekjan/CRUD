@@ -55,7 +55,7 @@
             <span class="icon text-white-50">
                 <i class="fas fa-arrow-right"></i>
             </span>
-            <span class="text">BACK</span>
+            <span class="text">ADD</span>
         </a>
         <a href="/" class="btn btn-secondary btn-icon-split">
             <span class="icon text-white-50">
