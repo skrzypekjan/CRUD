@@ -56,7 +56,7 @@ public class ArticleController {
         }
         articleDao.save(article);
         model.addAttribute("article", articleDao.findById(article.getId()));
-        //model.addAttribute("article", article);
+        model.addAttribute("article", article);
         return "article/show";
     }
 
